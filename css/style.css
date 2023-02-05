@@ -1,0 +1,1324 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  width: 100%;
+  height: 110px;
+  background-color: #A2B38B;
+  display: flex;
+  justify-content: right;
+  list-style-position: inside;
+}
+.header .Navlogo {
+  width: 100%;
+  justify-content: left;
+  display: flex;
+  flex-direction: row;
+}
+.header .lgmobile {
+  display: none;
+}
+.header li {
+  list-style: none;
+}
+.header .menu a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.cuenta {
+  width: 100%;
+  display: flex;
+  position: relative;
+  margin-top: 20px;
+  gap: 5px;
+  justify-content: end;
+  padding-right: 15px;
+  font-size: 15px;
+}
+.cuenta a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.navBar .menu {
+  display: flex;
+  list-style: none;
+  position: relative;
+  justify-content: space-between;
+  font-size: 15px;
+  gap: 30px;
+  margin-right: 20px;
+  margin-top: 15px;
+}
+.navBar a:hover {
+  color: #285430;
+}
+
+.mainContainer1 .encabezado {
+  background-image: url(../assets/img/portada\ alimentos\ lista.jpg);
+  width: 100%;
+  height: 350px;
+  background-repeat: no-repeat;
+}
+.mainContainer1 .encabezado h1 {
+  color: #fff;
+  font-size: 50px;
+  font-family: "Raleway", sans-serif;
+  text-shadow: 2px 2px #285430;
+  text-align: center;
+  padding: 100px;
+  animation-name: texto;
+  animation-duration: 0.7s;
+}
+
+@keyframes texto {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.cards {
+  display: grid;
+  flex-direction: row;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  justify-content: center;
+  align-items: center;
+  background-color: #EFEBE0;
+  width: 100%;
+  height: 300px;
+  justify-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.cards .box-1 {
+  background-color: #fff;
+  text-align: center;
+  height: 250px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+.cards .box-1 img {
+  border-radius: 50%;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.cards .box-1 .box1_imagenmob {
+  display: none;
+}
+.cards .box-2 {
+  background-color: #fff;
+  text-align: center;
+  height: 250px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border-radius: 20px;
+}
+.cards .box-2 img {
+  transform: rotate(90deg);
+  margin-bottom: 5px;
+  border-radius: 50%;
+}
+.cards .box-3 {
+  background-color: #fff;
+  text-align: center;
+  height: 250px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+.cards .box-3 img {
+  border-radius: 50%;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.cards a {
+  text-decoration: none;
+  color: black;
+}
+.cards .box1__description h2 {
+  background-color: #A2B38B;
+  width: 100%;
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 25px;
+  margin-top: 10px;
+}
+.cards .box1__description a {
+  font-size: 16px;
+}
+.cards .box1__description .box1_imagenmob {
+  display: none;
+}
+.cards .box2__description a {
+  font-size: 16px;
+}
+.cards .box2__description h2 {
+  background-color: #A2B38B;
+  text-align: center;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 25px;
+  margin-top: 10px;
+}
+.cards .box3__description a {
+  font-size: 16px;
+}
+.cards .box3__description h2 {
+  background-color: #A2B38B;
+  width: 100%;
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.box1__description h1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.box2__description h1 {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.box3__description h1 {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.redes {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(to bottom, #A2B38B, #7FA682, #57997E);
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.mainContainer2 {
+  width: 100%;
+  background-image: url("../assets/img/fondo de pantalla secciones.jpg");
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 50px 1fr 1fr 1fr 1fr;
+  row-gap: 15px;
+}
+.mainContainer2 h1 {
+  color: #285430;
+  font-family: "Raleway", sans-serif;
+  font-size: 40px;
+  padding: 10px;
+  grid-column: 2;
+  grid-row: 1;
+  text-align: center;
+  margin-top: 50px;
+}
+.mainContainer2 h2 {
+  grid-column: 2;
+  grid-row: 2;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  color: #285430;
+  background-color: #E4E9BE;
+  border-radius: 20px;
+  font-size: 25px;
+}
+
+.section-1_1 {
+  grid-column: 2/3;
+  grid-row: 3;
+  align-items: center;
+  margin-left: 300px;
+}
+.section-1_1 .preparacion1 {
+  list-style-image: url(../assets/img/cronometro\ cocina\ red.png);
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 18px;
+}
+.section-1_1 .nivel1 {
+  list-style-image: url(../assets/img/i\ cuchara\ verde\ red.png);
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.section-1_2 {
+  grid-column: 2;
+  grid-row: 3;
+  list-style-image: url(../assets/img/i\ cuchara\ verde\ red.png);
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 0.478);
+}
+
+.section-1_3 {
+  grid-column: 2;
+  grid-row: 4;
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 0.478);
+}
+
+.section-1_4 {
+  grid-column: 2;
+  grid-row: 5;
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 0.478);
+}
+.section-1_4 .img1 {
+  display: grid;
+  border-radius: 50%;
+  grid-column: 2;
+  grid-row: 6;
+  margin-left: 200px;
+}
+
+.mainContainer3 {
+  background-image: url("../assets/img/fondo de pantalla secciones.jpg");
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 50px 1fr 1fr 1fr 1fr;
+  row-gap: 15px;
+}
+.mainContainer3 h1 {
+  color: #285430;
+  font-family: "Raleway", sans-serif;
+  font-size: 40px;
+  text-align: center;
+  padding: 10px;
+  grid-column: 2;
+  grid-row: 1;
+  margin-top: 50px;
+}
+.mainContainer3 h2 {
+  color: #285430;
+  background-color: #E4E9BE;
+  display: grid;
+  border-radius: 20px;
+  justify-content: center;
+  grid-column: 2;
+  grid-row: 2;
+  font-size: 25px;
+}
+
+.section-2_1 {
+  grid-column: 2/3;
+  grid-row: 3;
+  align-items: center;
+  margin-left: 300px;
+}
+.section-2_1 .preparacion2 {
+  list-style-image: url(../assets/img/cronometro\ cocina\ red.png);
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 18px;
+}
+.section-2_1 .nivel2 {
+  list-style-image: url(../assets/img/i\ cuchara\ verde\ red.png);
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.section-2_2 {
+  grid-column: 2;
+  grid-row: 3;
+  list-style-image: url(../assets/img/i\ cuchara\ verde\ red.png);
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 0.478);
+}
+
+.section-2_3 {
+  grid-column: 2;
+  grid-row: 4;
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 0.478);
+}
+
+.section-2_4 {
+  grid-column: 2;
+  grid-row: 5;
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 0.478);
+}
+
+.section-2_5 {
+  grid-column: 2;
+  grid-row: 6;
+  display: grid;
+  margin-left: 200px;
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 0.478);
+  align-content: center;
+}
+
+.img2 {
+  display: grid;
+  border-radius: 50%;
+  grid-column: 2;
+  grid-row: 6;
+  margin-left: 200px;
+}
+
+.mainContainer4 {
+  background-image: url("../assets/img/fondo de pantalla secciones.jpg");
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 50px 50px 1000px 50px 900px;
+  column-gap: 25px;
+  border-style: solid 2px #a2b38b;
+  row-gap: 25px;
+}
+.mainContainer4 h1 {
+  color: #285430;
+  font-family: "Raleway", sans-serif;
+  font-size: 40px;
+  padding: 20px;
+  margin-top: 25px;
+  text-align: center;
+  grid-column: 2;
+  grid-row: 1;
+  text-align: center;
+}
+.mainContainer4 h2 {
+  color: #285430;
+  background-color: #E4E9BE;
+  display: grid;
+  border-radius: 20px;
+  justify-content: center;
+  grid-column: 2;
+  grid-row: 2;
+  font-size: 25px;
+}
+
+.section-3_1 {
+  grid-column: 2;
+  grid-row: 3;
+  text-align: center;
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 0.478);
+}
+.section-3_1 .img_1 {
+  border-radius: 50%;
+  display: grid;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 100px;
+}
+
+.section-3_2 {
+  grid-column: 2;
+  grid-row: 4;
+  text-align: center;
+}
+
+.section-3_3 {
+  grid-column: 2;
+  grid-row: 5;
+  text-align: center;
+  margin-right: 15px;
+}
+.section-3_3 .img_2 {
+  display: grid;
+  border-radius: 50%;
+  margin-top: 20px;
+  align-items: center;
+  margin-left: 100px;
+}
+
+.section-3_4 {
+  grid-column: 2;
+  grid-row: 6;
+  margin-right: 15px;
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 0.478);
+}
+
+.mainContainer5 {
+  background-image: url("../assets/img/fondo de pantalla secciones.jpg");
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 50px 1fr;
+  row-gap: 15px;
+  flex-direction: row;
+}
+.mainContainer5 h1 {
+  color: #285430;
+  font-family: "Raleway", sans-serif;
+  font-size: 40px;
+  padding: 20px;
+  margin-top: 25px;
+  grid-column: 3/4;
+  grid-row: 1;
+}
+
+.section-4_1 {
+  grid-column: 2;
+  grid-row: 2;
+  margin-top: 100px;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.478);
+}
+
+.section-4_2 {
+  grid-column: 2;
+  grid-row: 3;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.section-4_3 {
+  grid-column: 2;
+  grid-row: 4;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.section-4_9 {
+  grid-column: 2;
+  grid-row: 5;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.section-4_4 {
+  grid-column: 2;
+  grid-row: 6;
+  margin-top: 20px;
+  font-size: 16px;
+}
+.section-4_4 img {
+  display: grid;
+  border-radius: 50%;
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+.section-4_5 {
+  grid-column: 4;
+  grid-row: 2;
+  margin-top: 100px;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.478);
+}
+
+.section-4_6 {
+  grid-column: 4;
+  grid-row: 3;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.section-4_7 {
+  grid-column: 4;
+  grid-row: 4;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.section-4_10 {
+  grid-column: 4;
+  grid-row: 5;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.section-4_8 {
+  grid-column: 4;
+  grid-row: 6;
+  margin-top: 20px;
+  font-size: 16px;
+}
+.section-4_8 img {
+  display: grid;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.mainContainer6 {
+  width: 100%;
+  height: 510px;
+  background-image: url(../assets/img/avena\ red.jpg);
+  background-repeat: no-repeat;
+}
+.mainContainer6 h1 {
+  color: #285430;
+  font-family: "Raleway", sans-serif;
+  font-size: 40px;
+  text-align: center;
+  padding: 10px;
+}
+
+.formulario1 {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 50px 50px 50px 250px;
+}
+
+.frase {
+  display: flex;
+  position: relative;
+  background-color: #E5D9B6;
+  text-align: center;
+  justify-content: center;
+  font-family: "raleway", Light;
+  margin-left: 100px;
+  margin-right: 100px;
+  font-size: 20px;
+}
+
+.nombre1 {
+  grid-column: 3;
+  grid-row: 1;
+  justify-items: left;
+  font-family: "raleway", medium;
+  font-size: 8px;
+  margin-top: 20px;
+}
+
+.email {
+  grid-column: 3;
+  grid-row: 2;
+  justify-items: left;
+  font-family: "raleway", medium;
+  font-size: 8px;
+  margin-top: 20px;
+}
+
+.comentario {
+  grid-column: 3;
+  grid-row: 3;
+  justify-items: center;
+  font-family: "raleway", medium;
+  font-size: 8px;
+  margin-top: 20px;
+}
+
+.enviar {
+  grid-column: 4;
+  grid-row: 4;
+  justify-items: left;
+  width: 100%;
+  height: 50px;
+  font-family: "raleway", bold;
+  font-size: 12px;
+  background-color: #E5D9B6;
+  border: #E5D9B6;
+  margin-top: 150px;
+}
+
+.mainContainer7 {
+  display: flex;
+  font-family: "raleway", bold;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+  background-image: url(../assets/img/avena\ red.jpg);
+}
+.mainContainer7 h1 {
+  color: #285430;
+  font-family: "raleway", bold;
+  font-size: 40px;
+  text-align: center;
+  padding: 10px;
+  margin-top: 50px;
+}
+
+.section-5_1 {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 18px;
+}
+.section-5_1 .nombre2 {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
+  color: #285430;
+  font-weight: bold;
+  font-size: 18px;
+}
+.section-5_1 .apellido {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
+  color: #285430;
+  font-weight: bold;
+  font-size: 18px;
+}
+.section-5_1 .fecha {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
+  color: #285430;
+  font-weight: bold;
+  font-size: 18px;
+}
+.section-5_1 .sexo {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
+  color: #285430;
+  font-weight: bold;
+  font-size: 18px;
+}
+.section-5_1 .email7_1 {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
+  color: #285430;
+  font-weight: bold;
+  font-size: 18px;
+}
+.section-5_1 .contraseña1 {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
+  color: #285430;
+  font-weight: bold;
+  font-size: 18px;
+}
+.section-5_1 .terminos {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
+  color: #285430;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.button1 {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid #a2b38b;
+  background: #a2b38b;
+  height: 30px;
+  width: 20px;
+  margin-top: 55px;
+  margin-bottom: 20px;
+  margin-left: 60px;
+}
+.button1 a {
+  color: #285430;
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+.button1:hover {
+  background: #fff;
+  color: #a2b38b;
+}
+
+.section-5_2 {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  border-bottom: 20px;
+}
+
+.email7_2 {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 10px;
+  color: #285430;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.contraseña2 {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 18px;
+  color: #285430;
+  font-weight: bold;
+}
+
+.button2 {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid #a2b38b;
+  background: #a2b38b;
+  height: 30px;
+  width: 20px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  margin-left: 60px;
+}
+.button2 a {
+  color: #285430;
+  font-size: 16px;
+  margin-left: 3px;
+}
+
+.button2:hover {
+  background: #fff;
+  color: #a2b38b;
+}
+
+@media (max-width: 390px) {
+  .header {
+    background-image: linear-gradient(to bottom, #A2B38B, #7FA682, #57997E);
+  }
+  .header .Navlogo {
+    display: none;
+  }
+  .header .cuenta {
+    width: 100%;
+    display: flex;
+    position: relative;
+    font-size: 10px;
+    margin-bottom: 20px;
+  }
+  .header .cuenta a {
+    margin-top: 12px;
+  }
+  .header .cuenta img {
+    margin-top: 7px;
+  }
+  .header .navBar .lgmobile {
+    display: flex;
+    position: relative;
+    justify-content: left;
+    display: flex;
+    padding-right: 310px;
+  }
+  .header .navBar .menu {
+    font-size: 14px;
+    margin-right: 10px;
+    padding-bottom: 10px;
+    margin-top: 0px;
+  }
+  .mainContainer1 .encabezado {
+    background-image: url("../assets/img/portada alimentos mobile.jpg");
+  }
+  .mainContainer1 .encabezado h1 {
+    font-size: 8px;
+    padding: 10px;
+  }
+  .cards {
+    flex-direction: column;
+  }
+  .cards .box-2 {
+    display: none;
+  }
+  .cards .box-3 {
+    display: none;
+  }
+  .cards .box-1 {
+    margin-left: 60px;
+  }
+  .cards .box-1 .box1_imagen {
+    display: none;
+  }
+  .cards .box1_imagenmob {
+    display: flex;
+    border-radius: 50%;
+  }
+  .cards .box1-description h2 {
+    font-size: 12px;
+  }
+  .cards .box1-description a {
+    font-size: 8px;
+  }
+  /* recetas saladas */
+  .header {
+    background-image: linear-gradient(to bottom, #A2B38B, #7FA682, #57997E);
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: right;
+  }
+  .header .menu {
+    display: flex;
+    list-style: none;
+    position: relative;
+    gap: 2px;
+    font-size: 8px;
+    margin-left: 2px;
+  }
+  .header .Navlogo {
+    display: none;
+  }
+  .header .cuenta {
+    width: 100%;
+    display: flex;
+    position: relative;
+    font-size: 8px;
+    margin-top: 0px;
+    margin-bottom: -10px;
+  }
+  .header .home {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 25px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  .mainContainer2 {
+    background-image: url("../assets/img/fondo secciones mobile.jpg");
+    grid-template-columns: 1fr 200px 1fr;
+    grid-template-rows: 100px 50px 150px 180px 150px;
+  }
+  .mainContainer2 h1 {
+    font-size: 15px;
+    text-align: center;
+    grid-column: 2;
+    grid-row: 1;
+    text-align: center;
+    margin-top: 5px;
+  }
+  .mainContainer2 h2 {
+    grid-column: 2;
+    grid-row: 1;
+    height: 35px;
+    margin-top: 65px;
+    display: grid;
+    border-radius: 20px;
+    font-size: 10px;
+    text-align: center;
+    justify-content: center;
+  }
+  .section-1_1 {
+    grid-column: 2;
+    grid-row: 2;
+    align-items: flex-end;
+    margin-left: 20px;
+    text-align: center;
+    margin-left: 120px;
+    font-size: 10px;
+  }
+  .section-1_1 .preparacion1 {
+    list-style-image: url(../assets/img/cronometro\ cocina\ mobile.png);
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 10px;
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .section-1_1 .nivel1 {
+    list-style-image: url(../assets/img/i\ cuchara\ verde\ mobile.png);
+    margin-top: 0px;
+    font-size: 10px;
+    grid-column: 2;
+    grid-row: 2;
+    gap: 15px;
+  }
+  .section-1_2 {
+    grid-column: 2;
+    grid-row: 3;
+    list-style-image: url(../assets/img/i\ cuchara\ verde\ mobile.png);
+    font-size: 10px;
+    margin-left: 25px;
+  }
+  .section-1_2 h3 {
+    color: #a2b38b;
+  }
+  .section-1_3 {
+    grid-column: 2;
+    grid-row: 4;
+    font-size: 10px;
+    margin-left: 25px;
+  }
+  .section-1_3 h3 {
+    color: #a2b38b;
+  }
+  .section-1_4 {
+    grid-column: 2;
+    grid-row: 5;
+    font-size: 10px;
+    margin-left: 25px;
+  }
+  .section-1_4 h3 {
+    color: #a2b38b;
+  }
+  .section-1_4 .img1 {
+    display: none;
+  }
+  /* recetas dulces */
+  header {
+    background-image: linear-gradient(to bottom, #A2B38B, #7FA682, #57997E);
+  }
+  .navBar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navBar .home {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 25px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  .header {
+    width: 100%;
+    height: 75px;
+    background-color: #A2B38B;
+    display: flex;
+    justify-content: right;
+  }
+  .header .navBar .menu {
+    display: flex;
+    list-style: none;
+    position: relative;
+    gap: 2px;
+    font-size: 8px;
+    margin-left: 2px;
+    margin-bottom: 2px;
+  }
+  .header .Navlogo {
+    display: none;
+  }
+  .header .cuenta {
+    width: 100%;
+    display: flex;
+    position: relative;
+    font-size: 8px;
+    margin-top: 0px;
+    margin-bottom: -10px;
+  }
+  .mainContainer3 h1 {
+    font-size: 15px;
+    text-align: center;
+  }
+  .mainContainer3 {
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+    grid-template-rows: 100px 50px 150px 130px 150px;
+  }
+  .mainContainer3 h1 {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: center;
+    margin-top: 5px;
+  }
+  .mainContainer3 h2 {
+    grid-column: 2;
+    grid-row: 1;
+    height: 35px;
+    margin-top: 65px;
+    display: grid;
+    border-radius: 20px;
+    font-size: 10px;
+    text-align: center;
+    justify-content: center;
+  }
+  .section-2_1 {
+    grid-column: 2;
+    grid-row: 2;
+    align-items: flex-end;
+    margin-left: 20px;
+    text-align: center;
+    margin-left: 120px;
+    font-size: 10px;
+  }
+  .section-2_1 .preparacion2 {
+    list-style-image: url(../assets/img/cronometro\ cocina\ mobile.png);
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 10px;
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .section-2_1 .nivel2 {
+    list-style-image: url(../assets/img/i\ cuchara\ verde\ mobile.png);
+    margin-top: 0px;
+    font-size: 10px;
+    grid-column: 2;
+    grid-row: 2;
+    gap: 15px;
+  }
+  .section-2_2 {
+    grid-column: 2;
+    grid-row: 3;
+    list-style-image: url(../assets/img/i\ cuchara\ verde\ mobile.png);
+    font-size: 10px;
+    margin-left: 25px;
+  }
+  .section-2_2 h3 {
+    color: #a2b38b;
+  }
+  .section-2_3 {
+    grid-column: 2;
+    grid-row: 4;
+    font-size: 10px;
+    margin-left: 25px;
+  }
+  .section-2_3 h3 {
+    color: #a2b38b;
+  }
+  .section-2_4 {
+    grid-column: 2;
+    grid-row: 5;
+    font-size: 10px;
+    margin-left: 25px;
+  }
+  .section-2_4 h3 {
+    color: #a2b38b;
+  }
+  .section-2_4 .img2 {
+    display: none;
+  }
+  /* novedades */
+  .mainContainer4 {
+    border-style: solid 2px #a2b38b;
+    row-gap: 5px;
+    column-gap: 5px;
+  }
+  .mainContainer4 h1 {
+    font-size: 20px;
+    padding: 8px;
+    margin-top: 12px;
+    padding: 5px;
+  }
+  .mainContainer4 h2 {
+    font-size: 15px;
+    border-top: 10px;
+  }
+  .section-3_1 {
+    font-size: 12px;
+    align-items: center;
+  }
+  .img_1 {
+    margin-right: 10px;
+  }
+  .section-3_2 {
+    font-size: 12px;
+    justify-content: center;
+    margin-left: 15px;
+  }
+  .section-3_3 {
+    font-size: 12px;
+  }
+  .img_2 {
+    margin-right: 10px;
+  }
+  .section-3_4 {
+    font-size: 12px;
+  }
+  /* composicion nutricional */
+  .mainContainer5 {
+    row-gap: 5px;
+    background-repeat: repeat;
+  }
+  .mainContainer5 h1 {
+    color: #285430;
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    padding: 5px;
+    margin-top: 5px;
+    flex-direction: column;
+    grid-template-columns: repeat(10, 1fr);
+    grid-column: 3;
+    grid-row: 1;
+  }
+  .section-4_1 {
+    font-size: 12px;
+    margin-top: 10px;
+    grid-column: 3;
+    grid-row: 2;
+  }
+  .section-4_2 {
+    font-size: 12px;
+    margin-top: 10px;
+    grid-column: 3;
+    grid-row: 3;
+  }
+  .section-4_3 {
+    font-size: 12px;
+    margin-top: 10px;
+    grid-column: 3;
+    grid-row: 4;
+  }
+  .section-4_4 {
+    font-size: 12px;
+    margin-top: 10px;
+    grid-column: 3;
+    grid-row: 6;
+  }
+  .section-4_5 {
+    font-size: 12px;
+    margin-top: 10px;
+    grid-column: 3;
+    grid-row: 7;
+  }
+  .section-4_6 {
+    font-size: 12px;
+    margin-top: 10px;
+    grid-column: 3;
+    grid-row: 8;
+  }
+  .section-4_7 {
+    font-size: 12px;
+    margin-top: 10px;
+    grid-column: 3;
+    grid-row: 9;
+  }
+  .section-4_8 {
+    font-size: 12px;
+    margin-top: 10px;
+    grid-column: 3;
+    grid-row: 10;
+    margin-bottom: 15px;
+  }
+  .section-4_9 {
+    font-size: 12px;
+    margin-top: 10px;
+    grid-column: 3;
+    grid-row: 5;
+  }
+  .section-4_10 {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  .img_1 {
+    margin-left: 0px;
+  }
+  .img_2 {
+    margin-left: 0px;
+  }
+  /* contacto */
+  .mainContainer6 {
+    background-image: url(../assets/img/avena\ red.jpg);
+    background-repeat: no-repeat;
+  }
+  .mainContainer6 h1 {
+    color: #285430;
+    font-size: 20px;
+  }
+  .frase {
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 15px;
+  }
+  .enviar {
+    font-size: 10px;
+    margin-top: 140px;
+  }
+  /* mi-cuenta */
+  .mainContainer7 h1 {
+    font-size: 20px;
+  }
+  .section-5_1 {
+    font-size: 15px;
+  }
+  .section-5_2 {
+    font-size: 15px;
+    margin-top: 85px;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    background-image: linear-gradient(to bottom, #A2B38B, #7FA682, #57997E);
+  }
+  header .Navlogo {
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+  header .menu {
+    font-size: 15px;
+  }
+  .cuenta {
+    font-size: 15px;
+    margin-top: 15px;
+  }
+  .mainContainer1 .encabezado {
+    background-image: url(../assets/img/portada\ alimentos\ tablet.jpg);
+    width: 100%;
+    height: 270px;
+    background-repeat: no-repeat;
+  }
+  .mainContainer1 .encabezado h1 {
+    font-size: 30px;
+  }
+  .cards {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  /* comp nutricional */
+  .section-4_1 {
+    margin-left: 15px;
+  }
+  /* novedades */
+  .section-3_1 .img_1 {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  .section-3_3 .img_2 {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  /* contacto */
+  .mainContainer6 {
+    background-image: url(../assets/img/avena\ red.jpg);
+    background-repeat: repeat;
+    height: 700px;
+  }
+  .frase {
+    margin-top: 50px;
+  }
+  .formulario1 {
+    margin-top: 80px;
+  }
+  .enviar {
+    margin-top: 140px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

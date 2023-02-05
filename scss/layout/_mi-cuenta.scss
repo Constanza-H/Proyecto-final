@@ -1,0 +1,145 @@
+.mainContainer7{
+	display: flex;
+	font-family: 'raleway', bold;
+	width: 100%;
+	justify-content: center;
+	flex-direction: column;
+	gap: 25px;
+	align-items: center;
+	background-image: url(../assets/img/avena\ red.jpg);
+	
+
+	h1{
+		color: $color-3;
+		font-family:'raleway', bold;
+		font-size: 40px;
+		text-align: center;
+		padding: 10px;
+		margin-top: 50px;
+		}
+}
+.section-5_1 {
+	display: flex;
+	position: relative;
+	justify-content: center;
+	flex-direction: column;
+	font-size: 18px;
+
+
+	.nombre2{
+        @include flex1;
+    }
+    .apellido {
+      @include flex1;
+    }
+  .fecha {
+    @include flex1;
+    }
+  .sexo {
+    @include flex1;
+  }
+  .email7_1 {
+    @include flex1;
+}
+.contraseña1 {
+  @include flex1;
+}
+.terminos {
+  @include flex1;
+}
+}
+.button1 {
+	min-width: 130px;
+	height: 40px;
+	color: $color-1;
+	padding: 5px 10px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	position: relative;
+	display: inline-block;
+	outline: none;
+	border-radius: 5px;
+	border: 2px solid $color-2;
+	background: $color-2;
+	height: 30px;
+	width: 20px;
+	margin-top: 55px;
+	margin-bottom: 20px;
+	margin-left: 60px;
+
+	
+	
+	a {
+		color: $color-3;
+		font-size: 16px;
+		margin-left: 5px;
+		
+	}
+}  
+.button1:hover {
+	background: $color-1;
+	color: $color-2;
+  }
+
+.section-5_2 {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    border-bottom: 20px;
+  }
+	
+	.email7_2 {
+		display: flex;
+		position: relative;
+		flex-direction: column;
+		gap: 10px;
+    	color: $color-3;
+    	font-weight: bold;
+		font-size: 18px;
+	}
+	.contraseña2 {
+		display: flex;
+		position: relative;
+		flex-direction: column;
+		gap: 10px;
+		font-size: 18px;
+    	color: $color-3;
+    	font-weight: bold;
+	}
+
+.button2 {
+		min-width: 130px;
+		height: 40px;
+		color: $color-1;
+		padding: 5px 10px;
+		font-weight: bold;
+		cursor: pointer;
+		transition: all 0.3s ease;
+		position: relative;
+		display: inline-block;
+		outline: none;
+		border-radius: 5px;
+		border: 2px solid $color-2;
+		background: $color-2;
+		height: 30px;
+		width: 20px;
+		margin-top: 40px;
+		margin-bottom: 20px;
+		margin-left: 60px;
+		
+		
+		a {
+			color: $color-3;
+			font-size: 16px;
+			margin-left: 3px;
+			
+		}
+	}  
+.button2:hover {
+		background: $color-1;
+		color: $color-2;
+	  }
+

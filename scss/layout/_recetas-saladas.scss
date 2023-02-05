@@ -1,0 +1,81 @@
+.mainContainer2 {
+	width: 100%;
+	background-image: url("../assets/img/fondo de pantalla secciones.jpg");
+	display:grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows :1fr 50px 1fr 1fr 1fr 1fr;
+	row-gap : 15px;
+	
+	h1 {
+		color: $color-3;
+		font-family: $tipografia-principal ;
+		font-size: 40px;
+		padding: 10px;
+		grid-column: 2;
+		grid-row: 1;
+		text-align: center;
+		margin-top: 50px;
+		
+	}
+	h2 {
+		grid-column: 2;
+		grid-row: 2;
+		display: grid;
+		align-items: center;
+		justify-content: center;
+		color: $color-3;
+		background-color:$background-fondo ;
+		border-radius: 20px;
+		font-size: 25px;
+		
+		
+	}
+}
+.section-1_1 {
+	grid-column: 2/3;
+	grid-row: 3;
+	align-items: center;
+	margin-left: 300px;
+	
+	
+	.preparacion1 {
+		list-style-image: url(../assets/img/cronometro\ cocina\ red.png);
+		justify-content: center;
+		align-items: flex-end;
+		font-size: 18px;
+	}
+	.nivel1 {
+		list-style-image: url(../assets/img/i\ cuchara\ verde\ red.png);
+		margin-top: 15px;
+		font-size: 18px; 
+	}
+}
+.section-1_2 {
+	grid-column: 2;
+	grid-row: 3;
+	list-style-image: url(../assets/img/i\ cuchara\ verde\ red.png);
+	font-size: 18px;
+	background-color:rgba(255, 255, 255, 0.478) ; 
+	
+
+}
+.section-1_3 {
+	grid-column: 2;
+	grid-row: 4;
+	font-size: 18px;
+	background-color:rgba(255, 255, 255, 0.478) ; 
+	
+}
+.section-1_4 {
+	grid-column: 2;
+	grid-row: 5;
+	font-size: 18px;
+	background-color:rgba(255, 255, 255, 0.478) ; 
+	.img1 {
+		display: grid;
+		border-radius: 50%;
+		grid-column: 2;
+		grid-row: 6;
+		margin-left: 200px;
+	}
+}

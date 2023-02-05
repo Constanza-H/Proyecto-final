@@ -1,0 +1,14 @@
+@mixin flex1{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+    color: $color-3;
+    font-weight: bold;
+    font-size: 18px;
+}
+@mixin flex2{
+    font-family: 'raleway',medium;
+	font-size: 8px;
+	margin-top: 20px;
+}

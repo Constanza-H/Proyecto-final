@@ -1,0 +1,70 @@
+@media ( max-width:768px ){
+    header{
+        background-image:linear-gradient(to bottom , #A2B38B , #7FA682 , #57997E ); 
+   .Navlogo{
+    margin-top: 5px;
+    margin-left: 5px;
+   }
+        .menu{
+    font-size: 15px ;
+}
+}
+.cuenta{
+    font-size: 15px;
+    margin-top: 15px;
+    
+   }
+  
+.mainContainer1 {
+        .encabezado{
+        background-image: url(../assets/img/portada\ alimentos\ tablet.jpg);
+        width: 100%;
+        height: 270px;
+       background-repeat: no-repeat;
+        h1{
+            font-size: 30px; 
+        }
+}
+}
+.cards {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+/* comp nutricional */
+.section-4_1{
+    margin-left: 15px;
+}
+
+/* novedades */
+.section-3_1{
+    .img_1{
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+}
+
+.section-3_3{
+    .img_2{
+        margin-right: 15px;
+        margin-left: 15px;
+        }
+}
+
+
+/* contacto */
+.mainContainer6 {
+    background-image: url(../assets/img/avena\ red.jpg);
+    background-repeat: repeat;
+    height: 700px;
+}
+.frase {
+    margin-top: 50px;
+}
+.formulario1{
+    margin-top: 80px;
+}
+.enviar {
+    margin-top: 140px;
+}
+}
